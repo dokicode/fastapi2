@@ -31,7 +31,6 @@ def create():
         r = {
             'success': False
         }
-    
     return r
 
 

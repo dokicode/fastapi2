@@ -120,11 +120,10 @@ class dfReader:
 
     def __init__(self, df, start=0, step=10) -> None:
         self._df = df
-        self.length = len(df)
         # print(start+step)
-        # self.iter = df.iloc[start : start+step].itertuples()
+        self.iter = df.iloc[start : start+step].itertuples()
         # self.iter = df.iloc[start : start+step].to_dict()
-        # print(self.iter)
+        print(self.iter)
         # self.iter = df.itertuples()
         self.columns = df.columns.tolist()
         self.start = start
@@ -137,20 +136,11 @@ class dfReader:
     #         value = row[col_index]
     #         print(f"{col_name} : {value}")
 
-
-
-    def __next__(self):
-        if self.start <= self.length:
-            self.iter = df.iloc[self.start : self.start + self.step].itertuples()
-            data = []
-            for i in self.iter:
-                data.append(self.to_dict(i))
-            self.start+= self.step
-            return data
-        else:
-            raise StopIteration
-
-
+    def next(self):
+        data = []
+        for i in self.iter:
+            data.append(self.to_dict(i))
+        return data
 
     def to_dict(self, row):
         index = row[0]
@@ -165,53 +155,35 @@ class dfReader:
         return rowData
 
 
-    # def __next__(self):
-    #     # data = next(self.iter)
-    #     # print('data', data)
-    #     # print(self.columns.index('C'))
-    #     # ff = pd.DataFrame(data).to_dict(orient='dict')
-    #     # ff = data[self.columns.index('D')+1]
-    #     # print(ff)
-    #     row = next(self.iter)
-    #     # print(self.columns)
-    #     index = row[0]
-    #     data = {}
-    #     for col_name in self.columns:
-    #         col_index = self.columns.index(col_name) + 1
-    #         value = row[col_index]
-    #         data[col_name] = value
-    #     rowData = {
-    #         index : data
-    #     }
+    def __next__(self):
+        # data = next(self.iter)
+        # print('data', data)
+        # print(self.columns.index('C'))
+        # ff = pd.DataFrame(data).to_dict(orient='dict')
+        # ff = data[self.columns.index('D')+1]
+        # print(ff)
+        row = next(self.iter)
+        # print(self.columns)
+        index = row[0]
+        data = {}
+        for col_name in self.columns:
+            col_index = self.columns.index(col_name) + 1
+            value = row[col_index]
+            data[col_name] = value
+        rowData = {
+            index : data
+        }
 
-    #     # print(rowData)
-    #         # print(f"{col_name} : {value}")
-    #     # print(row[2])
-    #     return rowData
-
-
-
-iter = dfReader(df, start=0, step=250)
-
-# print(iter.next())
-# print()
-# print(iter.next())
-# print()
-# print(iter.next())
-# print()
-# print(iter.next())
-
-
-print(next(iter))
-print()
-print(next(iter))
-print()
-print(next(iter))
-print()
-print(next(iter))
+        # print(rowData)
+            # print(f"{col_name} : {value}")
+        # print(row[2])
+        return rowData
 
 
 
+iter = dfReader(df, start=10)
+
+print(iter.next())
 # value = next(iter)
 # print(value)
 # value = next(iter)
