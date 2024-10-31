@@ -1,0 +1,3 @@
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 14.228824853897095 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 56.07885217666626 s
+core_app.Components.DataStream.extract > extract_all: 56.330159187316895 s

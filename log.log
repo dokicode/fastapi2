@@ -1,0 +1,291 @@
+Data sample
+
+	A	    B	C	        D	        F
+0	1.84	20	bom	        bom	        2024-04-17
+1	4.927	43	bom	        bom	        2022-12-27
+2	2.333	48	excelente	bom	        2007-05-10
+3	2.097	27	bom	        otimo	    2006-03-26
+4	1.932	57	bom	        bom	        2010-10-28
+5	3.02	67	bom	        bom	        2010-07-13
+
+
+5 mio csv filesize=196,7 MB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.8379230499267578 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 8.49805998802185 s
+core_app.Components.DataStream.extract > extract_all: 8.539916038513184 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.6341431140899658 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 8.329721212387085 s
+core_app.Components.DataStream.extract > extract_all: 8.366273880004883 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 2.020184278488159 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 8.77657175064087 s
+core_app.Components.DataStream.extract > extract_all: 8.812211036682129 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.5192420482635498 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 8.432898998260498 s
+core_app.Components.DataStream.extract > extract_all: 8.475907802581787 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.8052659034729004 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 8.738001823425293 s
+core_app.Components.DataStream.extract > extract_all: 8.777486801147461 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.6715350151062012 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 8.740046977996826 s
+core_app.Components.DataStream.extract > extract_all: 8.778521299362183 s
+
+10 mio csv filesize=394,4 MB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 3.7730560302734375 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 16.886462926864624 s
+core_app.Components.DataStream.extract > extract_all: 16.94985008239746 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 3.90208101272583 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 18.02997612953186 s
+core_app.Components.DataStream.extract > extract_all: 18.13087797164917 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 5.259075164794922 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 19.016107082366943 s
+core_app.Components.DataStream.extract > extract_all: 19.07842469215393 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 3.9293389320373535 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 21.505428075790405 s
+core_app.Components.DataStream.extract > extract_all: 21.633885383605957 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 3.6159839630126953 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 20.575933933258057 s
+core_app.Components.DataStream.extract > extract_all: 20.694322109222412 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 3.372451066970825 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 17.877292156219482 s
+core_app.Components.DataStream.extract > extract_all: 17.961174964904785 s
+
+15 mio csv filesize=569,6 MB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 6.0802412033081055 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 30.00655198097229 s
+core_app.Components.DataStream.extract > extract_all: 30.13410210609436 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 5.9754838943481445 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 27.23873209953308 s
+core_app.Components.DataStream.extract > extract_all: 27.382856130599976 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 5.122421979904175 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 25.87490200996399 s
+core_app.Components.DataStream.extract > extract_all: 25.96506381034851 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 5.487442255020142 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 27.992863178253174 s
+core_app.Components.DataStream.extract > extract_all: 28.121357679367065 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 8.420409917831421 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 29.158855199813843 s
+core_app.Components.DataStream.extract > extract_all: 29.275962114334106 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 6.919166803359985 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 29.8473961353302 s
+core_app.Components.DataStream.extract > extract_all: 30.007009029388428 s
+
+30 mio csv filesize=1,1 GB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 12.661648035049438 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 53.007071018218994 s
+core_app.Components.DataStream.extract > extract_all: 53.19681525230408 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 16.623676300048828 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 61.02199077606201 s
+core_app.Components.DataStream.extract > extract_all: 61.379700899124146 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 18.471133947372437 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 61.05565810203552 s
+core_app.Components.DataStream.extract > extract_all: 61.518070697784424 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 15.56182599067688 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 56.78753900527954 s
+core_app.Components.DataStream.extract > extract_all: 57.06646513938904 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 12.895582914352417 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 54.86730098724365 s
+core_app.Components.DataStream.extract > extract_all: 55.10069179534912 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 14.143386125564575 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 56.78315091133118 s
+core_app.Components.DataStream.extract > extract_all: 57.04402828216553 s
+
+50 mio csv filesize=1,9 GB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 37.84839177131653 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 110.54567098617554 s
+core_app.Components.DataStream.extract > extract_all: 111.13621401786804 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 37.09072518348694 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 109.12817168235779 s
+core_app.Components.DataStream.extract > extract_all: 109.67263889312744 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 33.26308298110962 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 104.33091592788696 s
+core_app.Components.DataStream.extract > extract_all: 104.85016083717346 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 30.013154983520508 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 98.18937182426453 s
+core_app.Components.DataStream.extract > extract_all: 98.63828492164612 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 29.429221868515015 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 97.64904403686523 s
+core_app.Components.DataStream.extract > extract_all: 98.02090382575989 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 29.290168046951294 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 97.24419283866882 s
+core_app.Components.DataStream.extract > extract_all: 97.61961793899536 s
+
+75 mio csv filesize=2,8 GB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 52.360995054244995 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 156.2175807952881 s
+core_app.Components.DataStream.extract > extract_all: 156.87355422973633 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 49.38599705696106 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 150.90873908996582 s
+core_app.Components.DataStream.extract > extract_all: 151.68558502197266 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 43.72282314300537 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 147.86760926246643 s
+core_app.Components.DataStream.extract > extract_all: 148.5040819644928 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 43.39931106567383 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 144.62960720062256 s
+core_app.Components.DataStream.extract > extract_all: 145.1361608505249 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 44.394619941711426 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 147.93180108070374 s
+core_app.Components.DataStream.extract > extract_all: 148.59278988838196 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 43.765892028808594 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 143.2472219467163 s
+core_app.Components.DataStream.extract > extract_all: 143.74597811698914 s
+
+100 mio csv filesize=3,8 GB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 68.5972228050232 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 210.555095911026 s
+core_app.Components.DataStream.extract > extract_all: 211.54940700531006 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 91.00383996963501 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 233.39185190200806 s
+core_app.Components.DataStream.extract > extract_all: 234.4120488166809 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 69.39086484909058 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 208.3908908367157 s
+core_app.Components.DataStream.extract > extract_all: 209.4185700416565 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 76.37816715240479 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 223.95781707763672 s
+core_app.Components.DataStream.extract > extract_all: 225.07598996162415 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 70.98866486549377 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 212.51321816444397 s
+core_app.Components.DataStream.extract > extract_all: 213.5584011077881 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 89.2073609828949 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 233.56574201583862 s
+core_app.Components.DataStream.extract > extract_all: 234.62015581130981 s
+
+125 mio csv filesize=4,7 GB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 302.49844312667847 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 499.6942789554596 s
+core_app.Components.DataStream.extract > extract_all: 501.14638090133667 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 305.1358940601349 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 503.60854506492615 s
+core_app.Components.DataStream.extract > extract_all: 505.04510593414307 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 296.52748680114746 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 488.0386691093445 s
+core_app.Components.DataStream.extract > extract_all: 489.4498119354248 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 303.72435998916626 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 498.6577250957489 s
+core_app.Components.DataStream.extract > extract_all: 500.0214252471924 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 300.3768820762634 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 493.56308794021606 s
+core_app.Components.DataStream.extract > extract_all: 495.05869698524475 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 293.3517038822174 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 496.2033121585846 s
+core_app.Components.DataStream.extract > extract_all: 497.65747714042664 s
+
+150 mio csv folesize=6,12 GB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 359.5867841243744 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 610.381884098053 s
+core_app.Components.DataStream.extract > extract_all: 612.3997890949249 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 355.94567704200745 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 599.184995174408 s
+core_app.Components.DataStream.extract > extract_all: 601.7652270793915 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 356.50946497917175 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 599.193131685257 s
+core_app.Components.DataStream.extract > extract_all: 601.4904761314392 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 355.8200612068176 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 602.5604019165039 s
+core_app.Components.DataStream.extract > extract_all: 605.0941820144653 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 353.07542610168457 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 596.4214110374451 s
+core_app.Components.DataStream.extract > extract_all: 598.8276650905609 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 352.76140213012695 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 584.3765308856964 s
+core_app.Components.DataStream.extract > extract_all: 585.988630771637 s
+
+200 mio csv filesize=7,6 GB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 485.5908441543579 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 860.7126548290253 s
+core_app.Components.DataStream.extract > extract_all: 871.1593630313873 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 467.4614577293396 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 850.7209317684174 s
+core_app.Components.DataStream.extract > extract_all: 861.6892001628876 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 474.8265788555145 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 840.8348259925842 s
+core_app.Components.DataStream.extract > extract_all: 850.2355189323425 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 469.6281569004059 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 851.1170630455017 s
+core_app.Components.DataStream.extract > extract_all: 862.2137358188629 s
+
+
+250 mio csv filesize=9,6 GB
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 675.4987499713898 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 1159.0091090202332 s
+core_app.Components.DataStream.extract > extract_all: 1171.9194300174713 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 665.053521156311 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 1136.563826084137 s
+core_app.Components.DataStream.extract > extract_all: 1148.3681600093842 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 690.7572767734528 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 1246.5687651634216 s
+core_app.Components.DataStream.extract > extract_all: 1264.0878322124481 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 612.3705909252167 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 1146.8852851390839 s
+core_app.Components.DataStream.extract > extract_all: 1162.7981860637665 s
+
+
+300 mio cls
+Process finished with exit code 247core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.4069697856903076 s
+
+
+5 mio csv
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.6128630638122559 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 19.881764888763428 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 19.95732092857361 s
+
+
+15 mio csv
+
+
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 11.464210987091064 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 104.39944291114807 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 104.67221188545227 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 5.3021180629730225 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 88.77941823005676 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 88.97314882278442 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 10.921780824661255 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 94.0886070728302 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 94.40659976005554 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 10.761430025100708 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 91.47931122779846 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 91.70343685150146 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 38.80535125732422 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 163.54287385940552 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 164.38459014892578 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 4.573974132537842 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 23.820250034332275 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 23.915411949157715 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 4.7880027294158936 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 92.74783372879028 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 93.04719018936157 s
+core_app.Components.CSVConnector._csv_connector > get_metadata: 12.109532117843628 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 3.481117010116577 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 24.176735877990723 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 24.263535737991333 s
+
+10 mio csv
+
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 3.5487570762634277 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 17.486995935440063 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 17.58953595161438 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.4920709133148193 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 7.992403984069824 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 8.046082258224487 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.5268809795379639 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 21.40168595314026 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 21.472967863082886 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.8470020294189453 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 27.059156894683838 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 27.13769793510437 s
+core_app.Components.Pandas.AdvancedDataFrame > _f_ra_data_selection: 0.7151570320129395 s
+core_app.Components.Pandas.AdvancedDataFrame > refresh_data: 19.82296872138977 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.5385329723358154 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 7.815387725830078 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 7.854740142822266 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.4961490631103516 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 7.68855094909668 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 7.730609893798828 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 1.4535069465637207 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 27.822141408920288 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 27.89570903778076 s
+core_app.Components.CSVConnector._csv_connector > read_data_from_source: 2.068925142288208 s
+core_app.Components.CSVConnector._csv_connector > _read_csv: 28.11857318878174 s
+core_app.Components.CSVConnector._csv_connector > extract_all: 28.191179037094116 s
+core_app.Components.Pandas.AdvancedDataFrame > _f_ra_data_selection: 0.1919848918914795 s
+core_app.Components.Pandas.AdvancedDataFrame > _f_ra_union: 0.5733559131622314 s
+core_app.Components.Pandas.AdvancedDataFrame > refresh_data: 92.6357970237732 s
