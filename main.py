@@ -39,7 +39,7 @@ from logger.logger_config import Logger
 
 import grequests
 
-
+os.environ["GEVENT_SUPPORT"] = '1'
 
 # dictConfig(log_config)
 
@@ -173,16 +173,21 @@ async def logme(data: dict):
 async def r_grequests():
     url = [
         'http://irkutskles.ru',
-        'http://dondata.ru'
+        'http://dondata.ru',
+        'https://ya.ru',
+        'https://mos.ru'
     ]
 
     rs = (grequests.get(u) for u in url)
     result = grequests.map(rs)
+    response = {}
+    for i, res in enumerate(result):
+        response[i] = res.status_code if res else False
 
     # r = ({i, result[i].status_code} for i in result)
     # out = [item for item in r]
     # print('result', result[0].headers)
-    return result[0].headers
+    return response
 
 @app.get("/read")
 async def read():
