@@ -41,6 +41,9 @@ import grequests
 
 os.environ["GEVENT_SUPPORT"] = '1'
 
+
+from app.job import Job
+
 # dictConfig(log_config)
 
 # print(__name__)
@@ -250,7 +253,28 @@ async def endpoint_ajax(request: Request):
     # return Response(content=jsonable_encoder(data), media_type='application/json')
     # return data
     # return JSONResponse(content='Hello from server!') 
+SSTIMER = False
+job = Job()
 
+def send_data():
+    print('dddd')
+
+
+@app.post("/start_stop")
+async def start_stop(request: Request):
+    global SSTIMER
+    global job
+    print(SSTIMER)
+    SSTIMER = not SSTIMER
+    if SSTIMER:
+        job.repeater(5, send_data)
+    else:
+        job.cancel()
+
+    data = {
+        'SSTIMER': SSTIMER
+    }
+    return JSONResponse(content=jsonable_encoder(data))
 
 
 
@@ -262,7 +286,7 @@ if __name__ == "__main__":
     path_to_log_file = os.path.join('./logs', 'fastapi_FileHandler.log')
     log_config = Logger(path_to_log_file)
     # uvicorn.run("main:app", port=8888, reload=True, log_config=log_config.getConfig())
-    uvicorn.run("main:app", port=8888, reload=True, log_config=log_config.getConfig())
+    uvicorn.run("main:app", port=8888, host='0.0.0.0', reload=True, log_config=log_config.getConfig())
 
     # uvicorn.run("main:app", port=8888, reload=True)
 
